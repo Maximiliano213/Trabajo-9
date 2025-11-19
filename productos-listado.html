@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado - PixelForge</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+    <h1 class="neon-title">Inventario PixelForge</h1>
+</header>
+
+<nav class="nav">
+    <a class="active" href="productos-listado.html">Listado</a>
+    <a href="productos-alta.html">Alta</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="index.html">Cerrar Sesión</a>
+</nav>
+
+<main class="panel">
+
+<h2>Listado de productos</h2>
+
+<form class="filtros">
+    <input type="text" placeholder="Buscar por nombre o SKU">
+    <select>
+        <option value="">Categoría</option>
+        <option>Hardware</option>
+        <option>Software</option>
+        <option>Consolas</option>
+    </select>
+    <select>
+        <option value="">Estado</option>
+        <option>Activo</option>
+        <option>Inactivo</option>
+    </select>
+    <button class="btn-neon">Filtrar</button>
+</form>
+
+<table class="tabla">
+    <thead>
+        <tr>
+            <th>SKU</th>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th>Stock</th>
+            <th>Precio</th>
+            <th>Estado</th>
+            <th>Acción</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>PX-001</td>
+            <td>Teclado RGB</td>
+            <td>Hardware</td>
+            <td>10</td>
+            <td>79.99</td>
+            <td>Activo</td>
+            <td><a class="btn-tabla" href="productos-editar.html">Editar</a></td>
+        </tr>
+    </tbody>
+</table>
+
+</main>
+
+</body>
+</html>

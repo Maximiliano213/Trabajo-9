@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar - PixelForge</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+    <h1 class="neon-title">Editar Producto</h1>
+</header>
+
+<nav class="nav">
+    <a href="productos-listado.html">Listado</a>
+    <a href="productos-alta.html">Alta</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="index.html">Cerrar Sesión</a>
+</nav>
+
+<main class="panel">
+
+<h2>Modificar datos del producto</h2>
+
+<form>
+
+<div class="campo">
+    <label>ID interno:</label>
+    <input type="text" value="1283" readonly>
+</div>
+
+<div class="campo">
+    <label>Proveedor (bloqueado por rol):</label>
+    <select disabled>
+        <option>RetroBits</option>
+    </select>
+</div>
+
+<div class="campo">
+    <label>Nombre:</label>
+    <input type="text" value="Joystick RGB Pro" required>
+</div>
+
+<div class="campo">
+    <label>Precio:</label>
+    <input type="number" step="0.01" value="49.99" required>
+</div>
+
+<div class="campo">
+    <label>Stock actual:</label>
+    <input type="number" min="0" value="25" required>
+</div>
+
+<div class="campo">
+    <label>Estado:</label>
+    <select>
+        <option>Activo</option>
+        <option>Inactivo</option>
+    </select>
+</div>
+
+<button class="btn-neon">Guardar cambios</button>
+<button class="btn-neon" type="reset">Restablecer</button>
+
+</form>
+
+</main>
+
+</body>
+</html>

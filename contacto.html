@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - PixelForge</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+    <h1 class="neon-title">Soporte / Contacto</h1>
+</header>
+
+<nav class="nav">
+    <a href="productos-listado.html">Listado</a>
+    <a href="productos-alta.html">Alta</a>
+    <a class="active" href="contacto.html">Contacto</a>
+    <a href="index.html">Cerrar Sesión</a>
+</nav>
+
+<main class="panel">
+
+<h2>Envío de consulta</h2>
+
+<form>
+
+<div class="campo">
+    <label>Nombre:</label>
+    <input type="text" required minlength="3">
+</div>
+
+<div class="campo">
+    <label>Email:</label>
+    <input type="email" required>
+</div>
+
+<div class="campo">
+    <label>Asunto:</label>
+    <select required>
+        <option value="">Seleccione…</option>
+        <option>Consulta técnica</option>
+        <option>Sugerencia</option>
+        <option>Error de stock</option>
+    </select>
+</div>
+
+<div class="campo full">
+    <label>Mensaje:</label>
+    <textarea rows="4" required minlength="10"></textarea>
+</div>
+
+<button class="btn-neon">Enviar</button>
+
+</form>
+
+</main>
+
+</body>
+</html>
+

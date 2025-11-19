@@ -1,0 +1,140 @@
+/* ======================= */
+/*   TEMA NEÓN GAMER GLOW  */
+/* ======================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', Arial, sans-serif;
+}
+
+body {
+    background: #050505;
+    color: #fff;
+}
+
+/* ----------------------- */
+/*       HEADER NEÓN       */
+/* ----------------------- */
+
+header {
+    padding: 30px;
+    text-align: center;
+}
+
+.neon-title {
+    font-size: 34px;
+    color: #00eaff;
+    text-shadow: 
+        0 0 5px #00eaff,
+        0 0 10px #00eaff,
+        0 0 20px #00eaff,
+        0 0 40px #007a99;
+}
+
+/* ----------------------- */
+/*     PANEL PRINCIPAL     */
+/* ----------------------- */
+
+.panel {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px;
+    background: rgba(15, 15, 15, 0.8);
+    border-radius: 15px;
+    border: 2px solid #7b00ff;
+    box-shadow: 0 0 25px #7b00ff80;
+}
+
+/* Subtítulo */
+.subtitulo {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #b366ff;
+    text-shadow: 0 0 10px #b366ff;
+}
+
+/* ----------------------- */
+/*     FORMULARIO NEÓN     */
+/* ----------------------- */
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+/* Campo */
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #333;
+    background: #111;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.25s;
+    box-shadow: inset 0 0 10px #000;
+}
+
+input:focus,
+select:focus {
+    border-color: #00eaff;
+    box-shadow: 0 0 10px #00eaff, 0 0 20px #007a99;
+    outline: none;
+    background: #1a1a1a;
+}
+
+/* ----------------------- */
+/*     BOTÓN NEÓN GLOW     */
+/* ----------------------- */
+
+.btn-neon {
+    grid-column: span 2;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+
+    background: transparent;
+    border: 2px solid #00eaff;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: 0.25s;
+
+    text-shadow: 0 0 10px #00eaff;
+    box-shadow: 0 0 15px #00eaff80;
+}
+
+.btn-neon:hover {
+    background: #00eaff;
+    color: #000;
+    box-shadow: 
+        0 0 10px #00eaff,
+        0 0 20px #00eaff,
+        0 0 40px #00eaff;
+    transform: scale(1.03);
+}
+
+/* ----------------------- */
+/*      RESPONSIVE         */
+/* ----------------------- */
+
+@media (max-width: 700px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-neon {
+        grid-column: 1;
+    }
+}

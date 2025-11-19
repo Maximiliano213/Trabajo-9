@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Alta - PixelForge</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+    <h1 class="neon-title">Alta de Producto</h1>
+</header>
+
+<nav class="nav">
+    <a href="productos-listado.html">Listado</a>
+    <a class="active" href="productos-alta.html">Alta</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="index.html">Cerrar Sesión</a>
+</nav>
+
+<main class="panel">
+
+<h2>Registrar nuevo producto</h2>
+
+<form>
+
+<div class="campo">
+    <label>SKU:</label>
+    <input type="text" required pattern="[A-Za-z0-9\-]+">
+</div>
+
+<div class="campo">
+    <label>Nombre:</label>
+    <input type="text" required minlength="3">
+</div>
+
+<div class="campo">
+    <label>Categoría:</label>
+    <select required>
+        <option value="">Seleccione…</option>
+        <option>Hardware</option>
+        <option>Software</option>
+        <option>Consolas</option>
+    </select>
+</div>
+
+<div class="campo">
+    <label>Proveedor:</label>
+    <select required>
+        <option value="">Seleccione…</option>
+        <option>GameTech</option>
+        <option>HyperSound</option>
+    </select>
+</div>
+
+<div class="campo">
+    <label>Precio:</label>
+    <input type="number" min="1" step="0.01" required>
+</div>
+
+<div class="campo">
+    <label>Stock:</label>
+    <input type="number" min="0" required>
+</div>
+
+<div class="campo">
+    <label>Stock mínimo:</label>
+    <input type="number" min="0" required>
+</div>
+
+<div class="campo">
+    <label>Estado:</label>
+    <select required>
+        <option value="">Seleccione…</option>
+        <option>Activo</option>
+        <option>Inactivo</option>
+    </select>
+</div>
+
+<button class="btn-neon">Guardar</button>
+
+</form>
+
+</main>
+
+</body>
+</html>
